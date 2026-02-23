@@ -6,7 +6,7 @@
         html, body {
             margin: 0;
             padding: 0;
-            background: transparent; /* nền trong suốt */
+            background: transparent;
             font-family: Arial, Helvetica, sans-serif;
             height: 100%;
         }
@@ -14,7 +14,7 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: flex-end; /* sát dưới */
+            align-items: flex-start; /* đẩy lên trên */
         }
 
         .container {
@@ -24,16 +24,18 @@
         }
 
         #clock {
-            color: #ffffff; /* chữ trắng */
+            color: #ffffff;
             font-size: 90px;
             font-weight: 700;
             letter-spacing: 2px;
+            line-height: 1; /* bỏ khoảng dư phía trên */
         }
 
         #date {
-            color: #ffffff; /* chữ trắng */
+            color: #ffffff;
             font-size: 28px;
             font-weight: 500;
+            line-height: 1;
         }
     </style>
 </head>
